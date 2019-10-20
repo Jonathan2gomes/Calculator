@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Calculator </h1>
+    </header>
+    <section >
+        <form name="calcform" method="post" action="">
+
+            <input type="text" name="visor" id="visor" />
+            
+            <table>
+                <tr>
+                    <td><input type="button" name="cls" class="oper" value="c" onclick="clearNum()" /></td>
+                    <td><input type="button" name="convert" class="oper" value="±" onclick="calcNum('-') "/> </td>
+                    <td><input type="button" name="%" class="oper" value="%" onclick="calcParse('percent')" /></td>
+                    <td><input type="button" name="division" class="oper" value="/" onclick="calcParse('div')" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="seven" class="num" value="7" onclick="calcNum(7)" /></td>
+                    <td><input type="button" name="eight" class="num" value="8" onclick="calcNum(8)" /></td>
+                    <td><input type="button" name="nine" class="num" value="9" onclick="calcNum(9)" /></td>
+                    <td><input type="button" name="mult" class="oper" value="*" onclick="calcParse('mult')" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><input type="button" name="four" class="num" value="4" onclick="calcNum(4)" /></td>
+                    <td><input type="button" name="five" class="num" value="5" onclick="calcNum(5)" /></td>
+                    <td><input type="button" name="six" class="num" value="6" onclick="calcNum(6)" /></td>
+                    <td><input type="button" name="add" class="oper" value="+" onclick="calcParse('add')" /></td>
+
+
+                </tr>
+                <tr>
+                    <td><input type="button" name="one" class="num" value="1" onclick="calcNum(1)" /></td>
+                    <td><input type="button" name="two" class="num" value="2" onclick="calcNum(2)" /></td>
+                    <td><input type="button" name="three" class="num" value="3" onclick="calcNum(3)" /></td>
+                    <td><input type="button" name="subtract" class="oper" value="-" onclick="calcParse('sub')" /></td>
+
+                </tr>
+                <tr>
+                    <td><input type="button" name="zero" class="num" value="0" onclick="calcNum(0)" /></td>
+                    <td><input type="button" name="dot" class="num" value="." onclick="calcNum('.')" /></td>
+                    <td><input type="button" name="pi" class="oper" value="pi" onclick="calcNum(3.14)" /> </td>
+                    <td><input type="button" name="equals" class="num" value="=" onclick="calcParse('res')" /></td>
+                </tr>
+            </table>
+         
+        </form>
+
+    </section>
+    <footer>
+        <p>&copy; Jonathan Gomes</p>
+    </footer>
+
+</body>
+
+</html>
